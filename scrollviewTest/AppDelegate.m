@@ -7,15 +7,34 @@
 //
 
 #import "AppDelegate.h"
+#import "UOTabScrollViewController.h"
+#import "UOHeaderScrollViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
     // Override point for customization after application launch.
+    UOTabScrollViewController *vc2 = [[UOTabScrollViewController alloc] init];
+    vc2.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"No Header" image:[UIImage new] tag:0];
+    
+    UOHeaderScrollViewController *vc1 = [[UOHeaderScrollViewController alloc] init];
+    vc1.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Header" image:[UIImage new] tag:1];
+    UITabBarController *tc = [[UITabBarController alloc] init];
+    
+    
+    UINavigationController *nav2 = [[UINavigationController alloc] initWithRootViewController:vc2];
+    UINavigationController *nav1 = [[UINavigationController alloc] initWithRootViewController:vc1];
+
+    tc.viewControllers = [NSArray arrayWithObjects:nav2, nav1, nil];
+    self.rootViewController = tc;
+//    self.rootViewController = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = self.rootViewController;
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

@@ -19,6 +19,8 @@
 		C7EA442719FACB4F00AB0E78 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7EA440F19FACB4F00AB0E78 /* UIKit.framework */; };
 		C7EA442F19FACB4F00AB0E78 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7EA442D19FACB4F00AB0E78 /* InfoPlist.strings */; };
 		C7EA443119FACB4F00AB0E78 /* scrollviewTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EA443019FACB4F00AB0E78 /* scrollviewTestTests.m */; };
+		C7EA443D19FACB9F00AB0E78 /* UOTabScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EA443C19FACB9F00AB0E78 /* UOTabScrollViewController.m */; };
+		C7EA444019FE9A4000AB0E78 /* UOHeaderScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EA443F19FE9A4000AB0E78 /* UOHeaderScrollViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,10 @@
 		C7EA442C19FACB4F00AB0E78 /* scrollviewTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "scrollviewTestTests-Info.plist"; sourceTree = "<group>"; };
 		C7EA442E19FACB4F00AB0E78 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C7EA443019FACB4F00AB0E78 /* scrollviewTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = scrollviewTestTests.m; sourceTree = "<group>"; };
+		C7EA443B19FACB9F00AB0E78 /* UOTabScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UOTabScrollViewController.h; sourceTree = "<group>"; };
+		C7EA443C19FACB9F00AB0E78 /* UOTabScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UOTabScrollViewController.m; sourceTree = "<group>"; };
+		C7EA443E19FE9A4000AB0E78 /* UOHeaderScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UOHeaderScrollViewController.h; sourceTree = "<group>"; };
+		C7EA443F19FE9A4000AB0E78 /* UOHeaderScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UOHeaderScrollViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,7 @@
 			children = (
 				C7EA441A19FACB4F00AB0E78 /* AppDelegate.h */,
 				C7EA441B19FACB4F00AB0E78 /* AppDelegate.m */,
+				C7EA443A19FACB6A00AB0E78 /* ViewControllers */,
 				C7EA441D19FACB4F00AB0E78 /* Images.xcassets */,
 				C7EA441219FACB4F00AB0E78 /* Supporting Files */,
 			);
@@ -142,6 +149,17 @@
 				C7EA442D19FACB4F00AB0E78 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C7EA443A19FACB6A00AB0E78 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C7EA443B19FACB9F00AB0E78 /* UOTabScrollViewController.h */,
+				C7EA443C19FACB9F00AB0E78 /* UOTabScrollViewController.m */,
+				C7EA443E19FE9A4000AB0E78 /* UOHeaderScrollViewController.h */,
+				C7EA443F19FE9A4000AB0E78 /* UOHeaderScrollViewController.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,7 +257,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7EA444019FE9A4000AB0E78 /* UOHeaderScrollViewController.m in Sources */,
 				C7EA441C19FACB4F00AB0E78 /* AppDelegate.m in Sources */,
+				C7EA443D19FACB9F00AB0E78 /* UOTabScrollViewController.m in Sources */,
 				C7EA441819FACB4F00AB0E78 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
